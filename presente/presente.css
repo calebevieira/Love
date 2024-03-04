@@ -28,19 +28,29 @@ a{
     gap: 20px;
     align-items: center;
     background-color: #0e0e13;
-    padding: 50px;
+    padding: 80px;
     border-radius: 20px;
     width: 50%;
 }
 
 #cafe p, #fast p, #cine p{
     background-color: #04106e;
-    padding: 50px;
+    padding: 30px;
     border-radius: 50px;
     font-size: 20px;
-    width: 300px;
+    width: 200px;
     text-align: center;
     transition: all .2s ease-in-out;
+    animation: blinkAnimation 1s infinite alternate;
+}
+
+@keyframes blinkAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 #cafe p:hover, #fast p:hover, #cine p:hover{
